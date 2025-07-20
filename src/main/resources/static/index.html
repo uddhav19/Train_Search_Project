@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Railway Search</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>🚂 Indian Railway Search</h1>
+        <p>Select stations from the dropdown to find trains</p>
+    </div>
+
+    <div class="search-card">
+        <div class="card-tabs">
+            <button class="card-tab active" onclick="switchView('search')">🔍 Search Trains</button>
+            <button class="card-tab" onclick="switchView('all')">🚂 All Trains</button>
+        </div>
+
+        <div id="searchView">
+            <form class="search-form" id="searchForm" onsubmit="searchTrains(event)">
+                <div class="form-controls">
+                    <div class="form-group">
+                        <label for="sourceStation">From Station</label>
+                        <div class="select-wrapper">
+                            <select id="sourceStation" name="sourceStation" required>
+                                <option value="">Select source station</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="button" class="swap-btn" onclick="swapStations()" title="Swap stations">
+                        ⇄
+                    </button>
+
+                    <div class="form-group">
+                        <label for="destStation">To Station</label>
+                        <div class="select-wrapper">
+                            <select id="destStation" name="destStation" required>
+                                <option value="">Select destination station</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="search-btn" id="searchBtn">
+                    Search Trains
+                </button>
+            </form>
+        </div>
+
+        <div id="allTrainsView" style="display: none;">
+            <div class="all-trains-header">
+                <h3>All Available Trains</h3>
+                <button class="refresh-btn" onclick="loadAllTrains()" id="refreshBtn">
+                    🔄 Refresh
+                </button>
+            </div>
+            <div id="allTrainsContainer">
+                <!-- All trains will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <div id="resultsSection" style="display: none;">
+        <div class="results-container">
+            <div class="results-header">
+                <h2>Available Trains</h2>
+                <div class="results-count" id="resultsCount"></div>
+            </div>
+            <div id="resultsContainer"></div>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
