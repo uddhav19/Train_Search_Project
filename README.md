@@ -44,3 +44,14 @@ The project uses the following database tables:
    ```bash
    https://github.com/uddhav19/Train_search_Project.git
    cd Train_search_Project
+
+
+
+## 📸 Screenshots
+
+### 🔎 Homepage
+![Homepage](screenshots/homepage.png)
+
+### 📃 Search Results
+![Search Results](screenshots/search_result.png)
+
