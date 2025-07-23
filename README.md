@@ -42,5 +42,5 @@ The project uses the following database tables:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/train-search.git
-   cd train-search
+   https://github.com/uddhav19/Train_search_Project.git
+   cd Train_search_Project
