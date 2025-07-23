@@ -50,8 +50,8 @@ The project uses the following database tables:
 ## 📸 Screenshots
 
 ### 🔎 Homepage
-![Homepage](screenshots/homepage.png)
+![Homepage](Screenshots/Alltrains.png)
 
 ### 📃 Search Results
-![Search Results](screenshots/search_result.png)
+![Search Results](Screenshots/Searchtrain.png)
 
